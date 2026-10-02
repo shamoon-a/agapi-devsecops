@@ -1,0 +1,31 @@
+{
+  "findings": [
+    {
+      "category": "code-injection",
+      "line": 5,
+      "message": "Avoid eval() on potentially untrusted input.",
+      "path": "agapi_app/example.py",
+      "rule_id": "config.python-dangerous-eval",
+      "severity": "HIGH"
+    },
+    {
+      "category": "command-injection",
+      "line": 8,
+      "message": "Avoid executing commands with shell=True.",
+      "path": "agapi_app/example.py",
+      "rule_id": "config.python-shell-true",
+      "severity": "HIGH"
+    },
+    {
+      "category": "weak-cryptography",
+      "line": 11,
+      "message": "MD5 is not suitable for security-sensitive hashing.",
+      "path": "agapi_app/example.py",
+      "rule_id": "config.python-md5",
+      "severity": "MEDIUM"
+    }
+  ],
+  "minimum_severity": "CRITICAL",
+  "scanner": "Semgrep",
+  "total_findings": 3
+}

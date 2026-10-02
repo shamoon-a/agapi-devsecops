@@ -1,0 +1,159 @@
+{
+  "engine_requested": "OSS",
+  "errors": [],
+  "paths": {
+    "scanned": [
+      "agapi_app/example.py"
+    ]
+  },
+  "profiling_results": [],
+  "results": [
+    {
+      "check_id": "config.python-dangerous-eval",
+      "end": {
+        "col": 28,
+        "line": 5,
+        "offset": 90
+      },
+      "extra": {
+        "engine_kind": "OSS",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "message": "Avoid eval() on potentially untrusted input.",
+        "metadata": {
+          "category": "code-injection"
+        },
+        "severity": "ERROR",
+        "validation_state": "NO_VALIDATOR"
+      },
+      "path": "agapi_app/example.py",
+      "start": {
+        "col": 12,
+        "line": 5,
+        "offset": 74
+      }
+    },
+    {
+      "check_id": "config.python-shell-true",
+      "end": {
+        "col": 43,
+        "line": 8,
+        "offset": 166
+      },
+      "extra": {
+        "engine_kind": "OSS",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "message": "Avoid executing commands with shell=True.",
+        "metadata": {
+          "category": "command-injection"
+        },
+        "severity": "ERROR",
+        "validation_state": "NO_VALIDATOR"
+      },
+      "path": "agapi_app/example.py",
+      "start": {
+        "col": 5,
+        "line": 8,
+        "offset": 128
+      }
+    },
+    {
+      "check_id": "config.python-md5",
+      "end": {
+        "col": 39,
+        "line": 11,
+        "offset": 228
+      },
+      "extra": {
+        "engine_kind": "OSS",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "message": "MD5 is not suitable for security-sensitive hashing.",
+        "metadata": {
+          "category": "weak-cryptography"
+        },
+        "severity": "WARNING",
+        "validation_state": "NO_VALIDATOR"
+      },
+      "path": "agapi_app/example.py",
+      "start": {
+        "col": 12,
+        "line": 11,
+        "offset": 201
+      }
+    }
+  ],
+  "skipped_rules": [],
+  "time": {
+    "fixpoint_timeouts": [],
+    "matching_time": {
+      "per_file_and_rule_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "total_time": 0.0,
+      "very_slow_rules_on_files": [],
+      "very_slow_stats": {
+        "count_ratio": 0.0,
+        "time_ratio": 0.0
+      }
+    },
+    "max_memory_bytes": 88064128,
+    "parsing_time": {
+      "per_file_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "total_time": 0.0,
+      "very_slow_files": [],
+      "very_slow_stats": {
+        "count_ratio": 0.0,
+        "time_ratio": 0.0
+      }
+    },
+    "prefiltering": {
+      "file_level_time": 0.0,
+      "project_level_time": 0.0,
+      "rules_matched_ratio": 1.0,
+      "rules_selected_ratio": 1.0,
+      "rules_with_file_prefilters_ratio": 1.0,
+      "rules_with_project_prefilters_ratio": 0.0
+    },
+    "profiling_times": {
+      "config_time": 0.17331695556640625,
+      "core_time": 0.35476136207580566,
+      "ignores_time": 7.128715515136719e-05,
+      "total_time": 0.5366373062133789
+    },
+    "rules": [],
+    "rules_parse_time": 0.00030112266540527344,
+    "scanning_time": {
+      "per_file_time": {
+        "mean": 0.012465953826904297,
+        "std_dev": 0.0
+      },
+      "total_time": 0.012465953826904297,
+      "very_slow_files": [],
+      "very_slow_stats": {
+        "count_ratio": 0.0,
+        "time_ratio": 0.0
+      }
+    },
+    "tainting_time": {
+      "per_def_and_rule_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "total_time": 0.0,
+      "very_slow_rules_on_defs": [],
+      "very_slow_stats": {
+        "count_ratio": 0.0,
+        "time_ratio": 0.0
+      }
+    },
+    "targets": [],
+    "total_bytes": 0
+  },
+  "version": "1.178.0"
+}
