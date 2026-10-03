@@ -1,4 +1,4 @@
-# AGAPI Tooling & DevSecOps Take-Home Assessment
+# AGAPI Tooling & DevSecOps Assessment
 
 ## Selected Tasks
 
